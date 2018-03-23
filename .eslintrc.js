@@ -1,10 +1,11 @@
 module.exports = {
+    "parser": "babel-eslint",
     "env": {
         "browser": true,
         "es6": true,
         "node": true
     },
-    "extends": "eslint:recommended",
+    "extends": ['plugin:react/recommended', "eslint:recommended"],
     "parserOptions": {
         "ecmaFeatures": {
             "experimentalObjectRestSpread": true,
@@ -31,6 +32,9 @@ module.exports = {
         "semi": [
             "error",
             "never"
-        ]
+        ],
+        "linebreak-style": 0,
+        "no-console": 0,
+        "react/prop-types": 0,
     }
 };
