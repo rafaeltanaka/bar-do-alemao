@@ -36,5 +36,6 @@ module.exports = {
         "linebreak-style": 0,
         "no-console": 0,
         "react/prop-types": 0,
+        "no-mixed-spaces-and-tabs": 0,
     }
 };
