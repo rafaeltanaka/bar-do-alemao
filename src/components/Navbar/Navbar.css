@@ -1,0 +1,15 @@
+.navbar{
+	background-color: #112406;
+	height: 5.438rem;
+}
+.menu{
+	display: flex;
+	margin: 0;
+	flex-flow: column nowrap;
+}
+.menuLink{
+	color: #efefef;
+	font-size: 1rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
