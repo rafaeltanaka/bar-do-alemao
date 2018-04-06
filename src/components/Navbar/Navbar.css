@@ -1,15 +1,123 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
 .navbar{
+    align-items: center;
 	background-color: #112406;
+	display: flex;
+	flex-flow: row nowrap;
 	height: 5.438rem;
+	justify-content: space-around;
+	position: fixed;
+	width: 100%;
+}
+.barInfo{
+	align-items: center;
+	display: flex;
+	flex-flow: row nowrap;
+	height: 100%;
+	justify-content: space-between;
+	padding: 0 1rem;
+	width: 100%;
+}
+.duration, .age{
+	color: #ABABAB;
+	width: 30%;
+}
+.duration{
+	/* font-family: pacifica-w00-condensed,fantasy; */
+	text-align: left;
+	visibility: hidden;
+}
+.logoBar{
+	height: 80%;
+}
+.age{
+	/* font-family: pacifica-w00-condensed,fantasy; */
+	text-align: right;
+	text-transform: uppercase;
+}
+.switch{
+	align-items: center;
+	background-color: #000000;
+	border: solid #ffffff .05rem;
+	border-radius: 5px;
+	display: flex;
+	height: 2.625rem;
+	justify-content: center;
+	left: 1rem;
+	position: absolute;
+	top: 1.4065rem;
+	width: 2.625rem;
+	z-index: 2;
 }
 .menu{
+	display: none;
+}
+.menuOpen{
 	display: flex;
-	margin: 0;
 	flex-flow: column nowrap;
+	margin: 0;
+	padding: 0 1rem;
+	position: absolute;
+	top: 4.0315rem;
+	width: 100%;
+	z-index: 2;
+}
+.hamburguer, .close{
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 2rem;
 }
 .menuLink{
+	background-color: #000000;
+	border: solid #ffffff .05rem;
 	color: #efefef;
 	font-size: 1rem;
+	height: 3rem;
+	padding: 1rem;
 	text-decoration: none;
 	text-transform: uppercase;
+}
+
+@media (min-width: 768px){
+	.navbar{
+		flex-flow: column wrap;
+		height: 10.75rem;
+	}
+	.barInfo{
+		flex-grow: 1;
+		height: auto;
+		max-width: 768px;
+	}
+	.duration, .age{
+		font-size: 1.5rem;
+	}
+	.duration{
+		visibility: visible;
+	}
+	.logoBar{
+		height: 5.75rem;
+	}
+	.switch{
+		display: none;
+	}
+	.menu, .menuOpen{
+		background-color: #112406;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		max-width: 768px;
+		padding: 0 1rem;;
+		position: static;
+		width: 100%;
+	}
+	.menuLink{
+		background-color: #112406;
+		border: none;
+		padding: 1rem 0;
+	}
 }
