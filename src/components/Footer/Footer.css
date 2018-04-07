@@ -1,0 +1,123 @@
+.footer{
+    background-color: #112406;
+    color: #EFEFEF;
+    padding: 1rem;
+}
+.contact{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: auto;
+    max-width: 425px;
+}
+.contactInfo{
+    display: flex;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+}
+.contactTitle, .openingTitle{
+    text-transform: uppercase;
+}
+.address, .wayOfContact, .openingHours{
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 0.9rem;
+    padding: 1rem 0 0 0;
+}
+.wayOfContact{
+    padding: 0.9rem 0 0 0;
+}
+.opening{
+    display: none;
+}
+.social{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+.socialIcons{
+    background-color: #EFEFEF;
+    border-radius: 25%;
+    color: #112406;
+    font-size: 2.5rem;
+    padding: .15rem;
+}
+.formNews{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 1rem;
+}
+.formText{
+    padding-top: 1rem;
+    text-align: center;
+}
+.inputName, .inputEmail, .formButton{
+    height: 3rem;
+    margin-top: 1rem;
+    max-width: 425px;
+    padding: 0 1rem;
+    width: 100%;
+}
+.inputName, .inputEmail{
+    background-color: #112406;
+    border: solid 0.125rem #ababab;
+    color: #EFEFEF;
+}
+.inputName::placeholder, .inputEmail::placeholder{
+    color: #EFEFEF;
+}
+
+@media (min-width: 768px){
+    .footer{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    .footerWrapper{
+        display: flex;
+        flex-flow: row nowrap;
+        max-width: 1000px;
+    }
+    .contact{
+        max-width: 1000px;
+    }
+    .contactInfo{
+        flex-grow: 0;
+    }
+    .address, .wayOfContact, .openingHours{
+        font-size: .7rem;
+    }
+    .opening{
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 0 1rem;
+    }
+    .sunday{
+        font-size: .6rem;
+    }
+    .formNews{
+        align-items: center;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    .formText{
+        padding-top: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .inputName, .inputEmail{
+        flex-grow: 1;
+        font-size: .7rem;
+        height: 2rem;
+        margin: 0 1rem 0 0;
+        padding: 0 .5rem;
+        width: 35%;
+    }
+    .formButton{
+        height: 2rem;
+        margin: 0;
+        padding: 0;
+        width: 2rem;
+    }
+}

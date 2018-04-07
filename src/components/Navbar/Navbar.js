@@ -18,7 +18,7 @@ class Navbar extends React.Component {
 	}
 
 	render() {
-		console.log(this.state.menuOpen)
+		
 		return (
 			<header>
 				<nav className={styles.navbar}>

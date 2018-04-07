@@ -7,6 +7,7 @@ import Programacao from './components/Pages/Programacao/Programacao'
 import Galeria from './components/Pages/Galeria/Galeria'
 import Cardapio from './components/Pages/Cardapio/Cardapio'
 import Informacoes from './components/Pages/Informacoes/Informacoes'
+import Footer from './components/Footer/Footer'
 
 const App = () => (
 	<main>
@@ -19,6 +20,7 @@ const App = () => (
 			<Route path="/cardapio" component={Cardapio} />
 			<Route path="/informacoes" component={Informacoes} />
 		</Switch>
+		<Footer />
 	</main>
 )
 
