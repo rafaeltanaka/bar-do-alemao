@@ -1,19 +1,19 @@
 .segment{
 	border-top: solid #000000 1px;
-	padding: 1rem;
+	padding: 1rem 0;
 }
-.categories, .categoriesItem{
+.categories, .categoriesItem, .beverageCategory{
 	display: flex;
 	flex-flow: column nowrap;
 }
-.categoriesTitle{
+.categoriesTitle, .beveragesTitle{
 	color: #3E3E3E;
 	font-size: 1rem;
 	padding-top: 1rem;
 	text-decoration: underline;
 	text-transform: uppercase;
 }
-.categoriesItem{
+.categoriesItem, .beveragesItemLeft, .beveragesItemRight{
 	list-style: none;
 	font-size: 1rem;
 }
@@ -41,10 +41,25 @@
 
 @media (min-width: 768px){
 	.segment{
-		align-items: flex-start;
 		display: flex;
 		flex-flow: row nowrap;
-		justify-content: flex-start;
 		max-width: 600px;
+		width: 100%;
+	}
+	.beverageCategory{
+		display: flex;
+		flex-flow: row wrap;
+		width: 100%;
+	}
+	.beveragesTitle{
+		width: 100%;
+	}
+	.leftHalf, .beveragesItemLeft{
+		padding-right: .5rem;
+		width: 50%;
+	}
+	.rightHalf, .beveragesItemRight{
+		padding-left: .5rem;
+		width: 50%;
 	}
 }
