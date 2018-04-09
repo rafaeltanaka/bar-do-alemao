@@ -5,18 +5,20 @@ import MenuList from './MenuList.js'
 const Menu = () => (
 	<React.Fragment>
 		<div className={styles.segment} >
-			<article className={styles.categories}>
-				<h2 className={styles.categoriesTitle} >filés</h2>
-				<ul className={styles.categoriesItem} >
-					{MenuList.files.map(item => (
-						<React.Fragment key={item.title}>
-							<li className={styles.itemTitle}>{item.title}</li>
-							<li className={styles.itemDescription} >{item.description}</li>
-						</React.Fragment>
-					))}
-				</ul>
-			</article>
-			<div>
+			<div className={styles.leftHalf} >
+				<article className={styles.categories}>
+					<h2 className={styles.categoriesTitle} >filés</h2>
+					<ul className={styles.categoriesItem} >
+						{MenuList.files.map(item => (
+							<React.Fragment key={item.title}>
+								<li className={styles.itemTitle}>{item.title}</li>
+								<li className={styles.itemDescription} >{item.description}</li>
+							</React.Fragment>
+						))}
+					</ul>
+				</article>
+			</div>
+			<div className={styles.rightHalf} >
 				<article className={styles.categories}>
 					<h2 className={styles.categoriesTitle} >massas</h2>
 					<span className={styles.categorieDescription} >(ao molho de tomates frescos preparado na casa)</span>
@@ -60,18 +62,20 @@ const Menu = () => (
 			</div>
 		</div>
 		<div className={styles.segment}>
-			<article className={styles.categories}>
-				<h2 className={styles.categoriesTitle} >porções</h2>
-				<ul className={styles.categoriesItem}>
-					{MenuList.porcoes.map(item => (
-						<React.Fragment key={item.title}>
-							<li className={styles.itemTitle} >{item.title}</li>
-							<li className={styles.itemDescription} >{item.description}</li>
-						</React.Fragment>
-					))}
-				</ul>
-			</article>
-			<div>
+			<div className={styles.leftHalf} >
+				<article className={styles.categories}>
+					<h2 className={styles.categoriesTitle} >porções</h2>
+					<ul className={styles.categoriesItem}>
+						{MenuList.porcoes.map(item => (
+							<React.Fragment key={item.title}>
+								<li className={styles.itemTitle} >{item.title}</li>
+								<li className={styles.itemDescription} >{item.description}</li>
+							</React.Fragment>
+						))}
+					</ul>
+				</article>
+			</div>
+			<div className={styles.rightHalf} >
 				<article className={styles.categories}>
 					<h2 className={styles.categoriesTitle} >sanduíches</h2>
 					<ul className={styles.categoriesItem}>
@@ -121,10 +125,10 @@ const Menu = () => (
 				</ul>
 			</article>
 		</div>
-		<div>
-			<article className={styles.categories}>
-				<h2 className={styles.categoriesTitle} >para beber</h2>
-				<ul className={styles.categoriesItem}>
+		<div className={styles.segment}>
+			<article className={styles.beverageCategory}>
+				<h2 className={styles.beveragesTitle} >para beber</h2>
+				<ul className={styles.beveragesItemLeft}>
 					{MenuList.beber.map(item => (
 						<React.Fragment key={item.title}>
 							<li className={styles.itemTitle} >{item.title}</li>
@@ -132,7 +136,7 @@ const Menu = () => (
 						</React.Fragment>
 					))}
 				</ul>
-				<ul className={styles.categoriesItem}>
+				<ul className={styles.beveragesItemRight}>
 					{MenuList.semAlcool.map(item => (
 						<React.Fragment key={item.title}>
 							<li className={styles.itemTitle} >{item.title}</li>

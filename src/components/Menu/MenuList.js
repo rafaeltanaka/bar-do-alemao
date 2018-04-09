@@ -1,7 +1,7 @@
 export default {
 	files: [
 		{
-			title: 'Filé Nignon Simples',
+			title: 'Filé Mignon Simples',
 			description: 'Grelhado, acompanhado de arroz e fritas'
 		},
 		{
@@ -107,15 +107,7 @@ export default {
 		},
 		{
 		   title: 'Bolinho da Dona Hebe ',
-		   description: ''
-		},
-		{
-		   title: 'bolinho de batatas da vovó, recheado',
-		   description: ''
-		},
-		{
-		   title: 'com salsichão',
-		   description: ''
+		   description: 'bolinho de batatas da vovó, recheado com salsichão'
 		},
 		{
 		   title: 'Calabresa acebolada',
