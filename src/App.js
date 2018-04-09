@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import Home from './components/Pages/Home/Home'
@@ -10,7 +10,7 @@ import Informacoes from './components/Pages/Informacoes/Informacoes'
 import Footer from './components/Footer/Footer'
 
 const App = () => (
-	<React.Fragment>
+	<Fragment>
 		<Navbar />
 		<main>
 			<Switch>
@@ -23,7 +23,7 @@ const App = () => (
 			</Switch>
 		</main>
 		<Footer />
-	</React.Fragment>
+	</Fragment>
 )
 
 export default App
