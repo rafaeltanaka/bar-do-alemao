@@ -25,7 +25,7 @@ class Footer extends React.Component {
 							</div>
 							<div className={styles.wayOfContact} >
 								<span>(11) 3672-1859 / 3862-5975</span>
-								<span>contato.bardoalemao@gmail.com</span>
+								<a className={styles.link} href="mailto:contato.bardoalemao@gmail.com">contato.bardoalemao@gmail.com</a>
 							</div>
 						</div>
 						<div className={styles.opening} >
@@ -40,9 +40,15 @@ class Footer extends React.Component {
 							</div>
 						</div>
 						<div className={styles.social} >
-							<FaFacebook className={styles.socialIcons} />
-							<FaYoutubePlay className={styles.socialIcons} />
-							<FaInstagram className={styles.socialIcons} />
+							<a className={styles.link} href="https://www.facebook.com/obardoalemao/" target="blank" >
+								<FaFacebook className={styles.socialIcons} />
+							</a>
+							<a className={styles.link} href="https://www.youtube.com/channel/UCSkmPWslGhBPneMu0S_IQ6w" target="blank" >
+								<FaYoutubePlay className={styles.socialIcons} />
+							</a>
+							<a className={styles.link} href="https://www.instagram.com/obardoalemao/" target="blank" >
+								<FaInstagram className={styles.socialIcons} />
+							</a>
 						</div>
 					</div>
 					<form className={styles.formNews} >

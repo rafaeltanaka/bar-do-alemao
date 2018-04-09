@@ -5,7 +5,7 @@
   padding: 0;
 }
 .navbar{
-    align-items: center;
+  align-items: center;
 	background-color: #112406;
 	display: flex;
 	flex-flow: row nowrap;
@@ -55,32 +55,58 @@
 	z-index: 2;
 }
 .menu{
-	display: none;
+	display: flex;
+	flex-flow: column nowrap;
+	left: -100%;
+	margin: 0;
+	padding: 0 1rem;
+	position: absolute;
+	transition: all .2s ease;
+	top: 4.0315rem;
+	width: 100%;
+	z-index: -1;
 }
 .menuOpen{
 	display: flex;
 	flex-flow: column nowrap;
+	left: 0;
 	margin: 0;
 	padding: 0 1rem;
 	position: absolute;
+	transition: all .2s ease;
 	top: 4.0315rem;
+	visibility: visible;
 	width: 100%;
 	z-index: 2;
 }
 .hamburguer, .close{
-	color: #ffffff;
+	color: #EFEFEF;
 	cursor: pointer;
 	font-size: 2rem;
 }
 .menuLink{
 	background-color: #000000;
-	border: solid #ffffff .05rem;
-	color: #efefef;
+	border: solid #EFEFEF .05rem;
+	color: #EFEFEF;
 	font-size: 1rem;
 	height: 3rem;
 	padding: 1rem;
 	text-decoration: none;
 	text-transform: uppercase;
+}
+.menuLink:active{
+	color: #868585;
+}
+.menuLink:hover{
+	color: #868585;
+	cursor: pointer;
+}
+.menuClose{
+	height: 100vh;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100vw;
 }
 
 @media (min-width: 768px){

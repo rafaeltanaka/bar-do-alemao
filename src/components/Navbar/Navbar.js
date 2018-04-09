@@ -18,10 +18,11 @@ class Navbar extends React.Component {
 	}
 
 	render() {
-		
+
 		return (
 			<header>
 				<nav className={styles.navbar}>
+					{this.state.menuOpen && <div className={styles.menuClose} onClick={this.toggleMenu} ></div>}
 					<div className={styles.barInfo} >
 						<span className={styles.duration} >1968 - 2018</span>
 						<img className={styles.logoBar} src={logoBar} alt="Logo do Bar do Alemão" />

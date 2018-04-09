@@ -26,6 +26,10 @@
 .wayOfContact{
     padding: 0.9rem 0 0 0;
 }
+.link{
+    color: #EFEFEF;
+    text-decoration: none;
+}
 .opening{
     display: none;
 }
