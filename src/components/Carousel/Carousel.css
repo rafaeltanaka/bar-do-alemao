@@ -1,0 +1,14 @@
+.carousel{
+  display: flex;
+  flex-flow: column nowrap;
+  max-height: 406px;
+  max-width: 640px;
+  overflow: hidden;
+  justify-content: center;
+}
+imageSelected{
+  
+}
+.imageHidden{
+  display: none;
+}

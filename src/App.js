@@ -10,18 +10,20 @@ import Informacoes from './components/Pages/Informacoes/Informacoes'
 import Footer from './components/Footer/Footer'
 
 const App = () => (
-	<main>
+	<React.Fragment>
 		<Navbar />
-		<Switch>
-			<Route exact path="/" component={Home} />
-			<Route path="/historia" component={Historia} />
-			<Route path="/programacao" component={Programacao} />
-			<Route path="/galeria" component={Galeria} />
-			<Route path="/cardapio" component={Cardapio} />
-			<Route path="/informacoes" component={Informacoes} />
-		</Switch>
+		<main>
+			<Switch>
+				<Route exact path="/" component={Home} />
+				<Route path="/historia" component={Historia} />
+				<Route path="/programacao" component={Programacao} />
+				<Route path="/galeria" component={Galeria} />
+				<Route path="/cardapio" component={Cardapio} />
+				<Route path="/informacoes" component={Informacoes} />
+			</Switch>
+		</main>
 		<Footer />
-	</main>
+	</React.Fragment>
 )
 
 export default App

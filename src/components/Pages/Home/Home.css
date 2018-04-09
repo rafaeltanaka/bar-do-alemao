@@ -1,0 +1,34 @@
+.home{
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    padding-top: 5.438rem;
+    justify-content: center;
+}
+.content{
+    padding: 1rem;
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+}
+.text{
+    text-align: justify;
+}
+.signature{
+	align-items: center;
+	display: flex;
+	flex-flow: column nowrap;
+	float: right;
+	justify-content: center;
+	padding-top: 1rem;
+}
+
+@media (min-width: 768px){
+    .home{
+    padding-top: 10.75rem;
+    }
+    .content{
+        max-width: 768px;
+    }
+}
