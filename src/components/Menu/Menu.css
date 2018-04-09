@@ -1,0 +1,50 @@
+.segment{
+	border-top: solid #000000 1px;
+	padding: 1rem;
+}
+.categories, .categoriesItem{
+	display: flex;
+	flex-flow: column nowrap;
+}
+.categoriesTitle{
+	color: #3E3E3E;
+	font-size: 1rem;
+	padding-top: 1rem;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+.categoriesItem{
+	list-style: none;
+	font-size: 1rem;
+}
+.itemTitle{
+	color: #3E3E3E;
+	font-size: 1rem;
+	font-weight: bold;
+	padding-top: 1rem;
+}
+.itemDescription{
+	color: #3E3E3E;
+	font-size: 1rem;
+}
+.categorieDescription{
+	font-size: .7rem;
+}
+.sideDishes{
+	color: #3E3E3E;
+	font-size: 1rem;
+	padding-top: 1rem;
+}
+.otherDescription{
+	font-weight: normal;
+}
+
+@media (min-width: 768px){
+	.segment{
+		align-items: flex-start;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		max-width: 600px;
+	}
+}

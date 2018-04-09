@@ -1,0 +1,22 @@
+.menu{
+	align-items: center;
+	display: flex;
+	flex-flow: column nowrap;
+	padding-top: 5.438rem;
+	justify-content: center;
+}
+.title{
+	text-align: center;
+	text-transform: uppercase;
+}
+.container{
+	padding: 1rem;
+	width: 100%;
+}
+
+
+@media (min-width: 768px){
+  	.menu{
+      	padding-top: 10.75rem;
+  	}
+}
