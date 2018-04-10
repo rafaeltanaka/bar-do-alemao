@@ -1,14 +1,44 @@
 .carousel{
-  display: flex;
-  flex-flow: column nowrap;
-  max-height: 406px;
-  max-width: 640px;
-  overflow: hidden;
-  justify-content: center;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	height: 500px;
+	/* max-width: 1366px; */
+	overflow: hidden;
+	width: 100%;
 }
-imageSelected{
-  
+.imageSelected{
+	width: 100%;
 }
 .imageHidden{
-  display: none;
+  	display: none;
+}
+.selectors{
+	position: relative;
+	top: -2rem;
+}
+.imgSelectorOn{
+	background-color: #ffffff;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+	height: 1.2rem;
+	margin: 0 .5rem;
+	width: 1.2rem;
+	z-index: 1;
+}
+.imgSelectorOff{
+	background-color: #777777;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+	height: 1.2rem;
+	margin: 0 .5rem;
+	width: 1.2rem;
+	z-index: 1;
+}
+.imgSelectorOff:hover{
+	background-color: #afafaf;
 }
