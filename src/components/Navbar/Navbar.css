@@ -138,7 +138,7 @@
 		flex-flow: row nowrap;
 		justify-content: space-between;
 		max-width: 768px;
-		padding: 0 1rem;;
+		padding: 0;
 		position: static;
 		width: 100%;
 	}
