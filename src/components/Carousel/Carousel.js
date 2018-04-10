@@ -27,10 +27,8 @@ class Carousel extends React.Component {
 		case 'image3':
 			this.changeImage('image1')
 			break
-		case 'image1':
-			this.changeImage('image2')
-			break
 		default:
+			this.changeImage('image2')
 			break
 		}
 	}
@@ -42,18 +40,16 @@ class Carousel extends React.Component {
 	render() {
 
 		return (
-			<React.Fragment>
-				<div className={styles.carousel} >
-					<img className={this.state.selectedImg == 'image1' ? styles.imageSelected : styles.imageHidden} src={image1} />
-					<img className={this.state.selectedImg == 'image2' ? styles.imageSelected : styles.imageHidden} src={image2} />
-					<img className={this.state.selectedImg == 'image3' ? styles.imageSelected : styles.imageHidden} src={image3} />
-				</div>
+			<div className={styles.carousel} >
+				<img className={this.state.selectedImg == 'image1' ? styles.imageSelectedOne : styles.imageHidden} src={image1} />
+				<img className={this.state.selectedImg == 'image2' ? styles.imageSelected : styles.imageHidden} src={image2} />
+				<img className={this.state.selectedImg == 'image3' ? styles.imageSelected : styles.imageHidden} src={image3} />
 				<div className={styles.selectors}>
 					<label className={this.state.selectedImg == 'image1' ? styles.imgSelectorOn : styles.imgSelectorOff} onClick={() => this.changeImage('image1')} checked={this.state.selectedImg == 'image1'}> </label>
 					<label className={this.state.selectedImg == 'image2' ? styles.imgSelectorOn : styles.imgSelectorOff} onClick={() => this.changeImage('image2')} checked={this.state.selectedImg == 'image2'}> </label>
 					<label className={this.state.selectedImg == 'image3' ? styles.imgSelectorOn : styles.imgSelectorOff} onClick={() => this.changeImage('image3')} checked={this.state.selectedImg == 'image3'}> </label>
 				</div>
-			</React.Fragment >
+			</div>
 		)
 	}
 }

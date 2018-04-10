@@ -1,21 +1,24 @@
 .carousel{
 	align-items: center;
 	display: flex;
+	flex-flow: column nowrap;
 	justify-content: center;
 	height: 500px;
-	/* max-width: 1366px; */
+	max-width: 768px;
 	overflow: hidden;
+	position: relative;
 	width: 100%;
 }
-.imageSelected{
-	width: 100%;
+.imageSelectedOne, .imageSelected{
+	height: 100%;
+	width: auto;
 }
 .imageHidden{
   	display: none;
 }
 .selectors{
-	position: relative;
-	top: -2rem;
+	position: absolute;
+	top: 470px;
 }
 .imgSelectorOn{
 	background-color: #ffffff;
@@ -41,4 +44,10 @@
 }
 .imgSelectorOff:hover{
 	background-color: #afafaf;
+}
+@media (min-width: 768px){
+	.imageSelected{
+		height: auto;
+		width: 100%;
+	}
 }
