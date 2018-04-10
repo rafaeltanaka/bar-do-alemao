@@ -1,0 +1,35 @@
+.weekday{
+	display: flex;
+	flex-flow: column nowrap;
+}
+.imageWrapper{
+
+}
+.link{
+	max-height: 65px;
+	max-width: 139px;
+	text-decoration: none;
+}
+.image{
+	/* height: 100%;
+	width: 100%; */
+}
+.content{
+	align-items: center;
+	background-color: #112406;
+	display: flex;
+	flex-flow: column nowrap;
+	height: 54px;
+	justify-content: center;
+}
+.day{
+	color: #EFEFEF;
+	font-size: 1rem;
+	text-transform: uppercase;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.time{
+	color: #EFEFEF;
+	font-size: .7rem;
+}
