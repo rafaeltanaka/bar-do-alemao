@@ -3,22 +3,23 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	height: 600px;
-	max-height: 600px;
+	max-height: 320px;
 	overflow: hidden;
 	position: relative;
 	width: 100%;
 }
 .imageSelectedOne, .imageSelected{
 	height: 100%;
-	width: auto;
+}
+.imageSelected{
+	height: 600px;
 }
 .imageHidden{
   	display: none;
 }
 .selectors{
 	position: absolute;
-	top: 570px;
+	top: 295px;
 }
 .imgSelectorOn{
 	background-color: #ffffff;
@@ -44,6 +45,16 @@
 }
 .imgSelectorOff:hover{
 	background-color: #afafaf;
+}
+
+@media (min-width: 768px){
+	.carousel{
+		height: 600px;
+		max-height: 600px;
+	}
+	.selectors{
+		top: 570px;
+	}
 }
 
 @media (min-width: 840px){
