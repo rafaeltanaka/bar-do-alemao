@@ -15,6 +15,13 @@
 	width: 100%;
 	z-index: 1;
 }
+.menuClose{
+	height: 100vh;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+}
 .barInfo{
 	align-items: center;
 	display: flex;
@@ -102,18 +109,15 @@
 	color: #868585;
 	cursor: pointer;
 }
-.menuClose{
-	height: 100vh;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 100vw;
-}
+
 
 @media (min-width: 768px){
 	.navbar{
 		flex-flow: column wrap;
 		height: 10.75rem;
+	}
+	.menuClose{
+		display: none;
 	}
 	.barInfo{
 		flex-grow: 1;
