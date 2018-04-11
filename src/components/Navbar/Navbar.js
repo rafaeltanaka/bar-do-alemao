@@ -13,7 +13,7 @@ class Navbar extends React.Component {
 	}
 
 	toggleMenu() {
-		event.stopPropagation()
+		window.event.stopPropagation()
 		this.setState({ menuOpen: !this.state.menuOpen })
 	}
 
