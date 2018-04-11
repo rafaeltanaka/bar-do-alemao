@@ -1,10 +1,10 @@
 import React from 'react'
-// import Carousel from '../../Carousel/Carousel'
+import Carousel from '../../Carousel/Carousel'
 import style from './Home.css'
 
 const Home = () => (
 	<section className={style.home} >
-		{/* <Carousel /> */}
+		<Carousel />
 		<div className={style.content} >
 			<h1 className={style.title} >bar do alemão: 50 anos de boa música e conversa boa</h1>
 			<p className={style.text} >Estamos comemorando mais de 18 mil e uma noites de alegria.</p>

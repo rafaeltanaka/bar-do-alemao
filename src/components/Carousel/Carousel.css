@@ -1,14 +1,53 @@
 .carousel{
-  display: flex;
-  flex-flow: column nowrap;
-  max-height: 406px;
-  max-width: 640px;
-  overflow: hidden;
-  justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	height: 500px;
+	max-width: 768px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
 }
-imageSelected{
-  
+.imageSelectedOne, .imageSelected{
+	height: 100%;
+	width: auto;
 }
 .imageHidden{
-  display: none;
+  	display: none;
+}
+.selectors{
+	position: absolute;
+	top: 470px;
+}
+.imgSelectorOn{
+	background-color: #ffffff;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+	height: 1.2rem;
+	margin: 0 .5rem;
+	width: 1.2rem;
+	z-index: 1;
+}
+.imgSelectorOff{
+	background-color: #777777;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+	height: 1.2rem;
+	margin: 0 .5rem;
+	width: 1.2rem;
+	z-index: 1;
+}
+.imgSelectorOff:hover{
+	background-color: #afafaf;
+}
+@media (min-width: 768px){
+	.imageSelected{
+		height: auto;
+		width: 100%;
+	}
 }
