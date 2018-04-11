@@ -3,8 +3,8 @@ import styles from './Menu.css'
 import MenuList from './MenuList.js'
 
 const Menu = () => (
-	<React.Fragment>
-		<div className={styles.segment} >
+	<div>
+		<div className={styles.firstSegment} >
 			<div className={styles.leftHalf} >
 				<article className={styles.categories}>
 					<h2 className={styles.categoriesTitle} >filés</h2>
@@ -54,7 +54,7 @@ const Menu = () => (
 					<ul className={styles.categoriesItem}>
 						{MenuList.outros.map(item => (
 							<React.Fragment key={item.title}>
-								<li className={styles.itemTitle} >{item.title} <span className={styles.otherDescription} >{item.description}</span></li>
+								<li className={styles.itemTitle} >{item.title}<span className={styles.otherDescription} >{item.description}</span></li>
 							</React.Fragment>
 						))}
 					</ul>
@@ -145,7 +145,7 @@ const Menu = () => (
 				</ul>
 			</article>
 		</div>
-	</React.Fragment>
+	</div>
 )
 
 export default Menu

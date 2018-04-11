@@ -3,7 +3,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    padding-bottom: 1rem;
+    padding: 0 1rem 1rem 1rem;
     width: 100%;
 }
 .about{
@@ -11,7 +11,6 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    padding: 0 1rem 1rem 1rem;
     width: 100%;
 }
 .content{
@@ -35,7 +34,6 @@
     text-align: left;
 }
 .localization{
-    padding: 1rem;
     width: 100%;
 }
 .map{
@@ -53,10 +51,16 @@
         max-width: 768px;
     }
     .about, .localization{
-        padding: 1rem 0;
         width: 50%;
     }
+    .about{
+        padding: 1rem .5rem 0 0;
+    }
+    .localization{
+        padding: 1rem 0 0 .5rem;
+        height: 100%
+    }
     .map{
-        height: 25rem;
+        height: 35rem;
     }
 }

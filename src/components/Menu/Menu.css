@@ -1,5 +1,4 @@
-.segment{
-	border-top: solid #000000 1px;
+.firstSegment{
 	padding: 1rem 0;
 }
 .categories, .categoriesItem, .beverageCategory{
@@ -38,9 +37,13 @@
 .otherDescription{
 	font-weight: normal;
 }
+.segment{
+	border-top: solid #000000 1px;
+	padding: 1rem 0;
+}
 
 @media (min-width: 768px){
-	.segment{
+	.firstSegment, .segment{
 		display: flex;
 		flex-flow: row nowrap;
 		max-width: 600px;

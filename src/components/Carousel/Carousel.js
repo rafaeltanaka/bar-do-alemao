@@ -1,7 +1,7 @@
 import React from 'react'
 import image1 from './5ff6bb_2bdbbc8394664c5cbb6a77c221fd40f1_mv2.jpg'
-import image2 from './5ff6bb_9e8e17275585492fa985f925edd9e49a_mv2.jpg'
-import image3 from './5ff6bb_f1a513ef283941528aeac6c7b3afd540_mv2.jpg'
+import image2 from './5ff6bb_f1a513ef283941528aeac6c7b3afd540_mv2.jpg'
+import image3 from './5ff6bb_9e8e17275585492fa985f925edd9e49a_mv2.jpg'
 import styles from './Carousel.css'
 
 class Carousel extends React.Component {

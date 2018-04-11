@@ -1,18 +1,13 @@
-.menu{
+.info{
 	align-items: center;
 	display: flex;
 	flex-flow: column nowrap;
 	padding-top: 5.438rem;
 	justify-content: center;
 }
-.title{
-	padding-top: 1rem;
-	text-align: center;
-	text-transform: uppercase;
-}
 
 @media (min-width: 768px){
-  	.menu{
-		padding-top: 10.75rem;  
-	}
+    .info{
+    padding-top: 10.75rem;
+    }
 }

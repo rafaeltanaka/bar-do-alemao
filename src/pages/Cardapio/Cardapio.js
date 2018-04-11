@@ -4,10 +4,7 @@ import styles from './Cardapio.css'
 
 const Cardapio = () => (
 	<section className={styles.menu} >
-		<h1 className={styles.title} >cardápio</h1>
-		<section className={styles.container} >
-			<Menu />
-		</section>
+		<Menu />
 	</section>
 )
 

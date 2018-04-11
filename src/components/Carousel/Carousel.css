@@ -1,10 +1,10 @@
 .carousel{
 	align-items: center;
 	display: flex;
-	flex-flow: column nowrap;
+	flex-flow: row wrap;
 	justify-content: center;
-	height: 500px;
-	max-width: 768px;
+	height: 600px;
+	max-height: 600px;
 	overflow: hidden;
 	position: relative;
 	width: 100%;
@@ -18,7 +18,7 @@
 }
 .selectors{
 	position: absolute;
-	top: 470px;
+	top: 570px;
 }
 .imgSelectorOn{
 	background-color: #ffffff;
@@ -26,9 +26,9 @@
 	border-radius: 50%;
 	cursor: pointer;
 	display: inline-block;
-	height: 1.2rem;
+	height: .6rem;
 	margin: 0 .5rem;
-	width: 1.2rem;
+	width: .6rem;
 	z-index: 1;
 }
 .imgSelectorOff{
@@ -37,17 +37,25 @@
 	border-radius: 50%;
 	cursor: pointer;
 	display: inline-block;
-	height: 1.2rem;
+	height: .6rem;
 	margin: 0 .5rem;
-	width: 1.2rem;
+	width: .6rem;
 	z-index: 1;
 }
 .imgSelectorOff:hover{
 	background-color: #afafaf;
 }
-@media (min-width: 768px){
+
+@media (min-width: 840px){
 	.imageSelected{
-		height: auto;
 		width: 100%;
+		height: initial;
+	}
+}
+
+@media (min-width: 1540px){
+	.imageSelectedOne{
+		width: 100%;
+		height: initial;
 	}
 }

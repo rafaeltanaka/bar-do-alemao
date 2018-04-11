@@ -1,0 +1,84 @@
+.weekday{
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin: auto;
+    padding: 5.438rem 1rem 3rem 1rem;
+    width: 100%;
+}
+.title{
+    align-self: flex-start;
+    font-size: 1rem;
+    padding-top: 1rem;    
+    text-transform: uppercase;
+}
+.description{
+    font-size: .8rem;
+    text-align: justify;
+    width: 100%;
+}
+.carousel{
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.carouselHide{
+    display: none;
+}
+.image{
+    width: 100%;
+}
+.caption{
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 3rem;
+    justify-content: flex-start;
+    width: 100%;
+}
+.description{
+    align-items: flex-start;
+    display: flex;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+}
+.imgTitle{
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+.imgDescription{
+    font-size: .8rem;
+}
+.control{
+    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding-left: 1rem;
+}
+.arrowLeft{
+    border: solid #3E3E3E;
+    border-width: .1rem 0 0 .1rem;  
+    cursor: pointer;
+    height: .7rem;
+    transform: rotate(-45deg);
+    width: .7rem;
+}
+.arrowRight{
+    border: solid #3E3E3E;
+    border-width: .1rem .1rem 0 0;
+    cursor: pointer;
+    height: .7rem;
+    transform: rotate(45deg);
+    width: .7rem;
+}
+
+@media (min-width: 768px){
+    .weekday{
+        max-width: 768px;
+        padding: 10.75rem 0 1rem 0;
+    }
+}

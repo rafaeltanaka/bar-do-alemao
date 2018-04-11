@@ -1,8 +1,8 @@
 .scheduleList{
 	display: flex;
 	flex-flow: row wrap;
-    justify-content: space-between;
-	padding: 0 .8rem;
+    justify-content: center;
+	padding: 2rem .8rem 0 .8rem;
 	width: 100%;
 }
 .weekday{
@@ -10,8 +10,7 @@
 	flex-flow: column nowrap;
 	height: 34%;
 	margin: 0 .1rem .5rem .1rem;
-	max-width: 249px;
-    width: 48%;
+    width: 49%;
 }
 .weekday:hover{
 	opacity: .7;
@@ -46,10 +45,17 @@
 
 @media (min-width: 768px){
     .scheduleList{
+		justify-content: space-between;
+		margin-bottom: 11rem;
 		max-width: 768px;
-		padding: 0;
+		padding: 2rem 1rem 0 1rem;
 	}
 	.weekday{
 		margin: 0 0 .5rem 0;
+		max-width: 243px;
+	}
+	.image{
+		height: 198px;
+		width: 243px;
 	}
 }
