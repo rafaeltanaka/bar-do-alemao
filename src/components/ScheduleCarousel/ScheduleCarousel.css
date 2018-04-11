@@ -1,0 +1,49 @@
+.carousel{
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.image{
+    width: 100%;
+}
+.caption{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.description{
+    align-items: flex-start;
+    display: flex;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+}
+.imgTitle{
+    font-size: .8rem;
+}
+.imgDescription{
+    font-size: .8rem;
+}
+.control{
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.arrowLeft{
+    border: solid #3E3E3E;
+    border-width: .1rem 0 0 .1rem;  
+    cursor: pointer;
+    height: .7rem;
+    transform: rotate(-45deg);
+    width: .7rem;
+}
+
+.arrowRight{
+    border: solid #3E3E3E;
+    border-width: .1rem .1rem 0 0;
+    cursor: pointer;
+    height: .7rem;
+    transform: rotate(45deg);
+    width: .7rem;
+}

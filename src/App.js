@@ -7,6 +7,12 @@ import Programacao from './components/Pages/Programacao/Programacao'
 import Galeria from './components/Pages/Galeria/Galeria'
 import Cardapio from './components/Pages/Cardapio/Cardapio'
 import Informacoes from './components/Pages/Informacoes/Informacoes'
+import Monday from './components/Pages/SchedulePages/Monday'
+import Tuesday from './components/Pages/SchedulePages/Tuesday'
+import Wednesday from './components/Pages/SchedulePages/Wednesday'
+import Thursday from './components/Pages/SchedulePages/Thursday'
+import Friday from './components/Pages/SchedulePages/Friday'
+import Sunday from './components/Pages/SchedulePages/Sunday'
 import Footer from './components/Footer/Footer'
 
 const App = () => (
@@ -20,6 +26,12 @@ const App = () => (
 				<Route path="/galeria" component={Galeria} />
 				<Route path="/cardapio" component={Cardapio} />
 				<Route path="/informacoes" component={Informacoes} />
+				<Route path="/Monday" component={Monday} />
+				<Route path="/Tuesday" component={Tuesday} />
+				<Route path="/Wednesday" component={Wednesday} />
+				<Route path="/Thursday" component={Thursday} />
+				<Route path="/Friday" component={Friday} />
+				<Route path="/Sunday" component={Sunday} />
 			</Switch>
 		</main>
 		<Footer />

@@ -12,7 +12,7 @@ const ScheduleList = () => (
 	<section className={styles.scheduleList} >
 		<article className={styles.weekday} >
 			<div className={styles.imageWrapper}>
-				<Link to="/" className={styles.link} >
+				<Link to="/Monday" className={styles.link} >
 					<img className={styles.image} src={segunda} />
 				</Link>
 			</div>
@@ -23,7 +23,7 @@ const ScheduleList = () => (
 			</div>
 		</article>
 		<article className={styles.weekday} >
-			<Link to="/" className={styles.link} >
+			<Link to="/Tuesday" className={styles.link} >
 				<img className={styles.image} src={terca} />
 			</Link>
 			<div className={styles.content} >
@@ -33,7 +33,7 @@ const ScheduleList = () => (
 			</div>
 		</article>
 		<article className={styles.weekday} >
-			<Link to="/" className={styles.link} >
+			<Link to="/Wednesday" className={styles.link} >
 				<img className={styles.image} src={quarta} />
 			</Link>
 			<div className={styles.content} >
@@ -43,7 +43,7 @@ const ScheduleList = () => (
 			</div>
 		</article>
 		<article className={styles.weekday} >
-			<Link to="/" className={styles.link} >
+			<Link to="/Thursday" className={styles.link} >
 				<img className={styles.image} src={quinta} />
 			</Link>
 			<div className={styles.content} >
@@ -53,7 +53,7 @@ const ScheduleList = () => (
 			</div>
 		</article>
 		<article className={styles.weekday} >
-			<Link to="/" className={styles.link} >
+			<Link to="/Friday" className={styles.link} >
 				<img className={styles.image} src={sexta} />
 			</Link>
 			<div className={styles.content} >
@@ -63,7 +63,7 @@ const ScheduleList = () => (
 			</div>
 		</article>
 		<article className={styles.weekday} >
-			<Link to="/" className={styles.link} >
+			<Link to="/Sunday" className={styles.link} >
 				<img className={styles.image} src={domingo} />
 			</Link>
 			<div className={styles.content} >
