@@ -17,8 +17,12 @@ class Navbar extends React.Component {
 		this.setState({ menuOpen: !this.state.menuOpen })
 	}
 
-	render() {
+	linkHandler(page) {
+		this.setState({ menuOpen: false, pageOpen: page })
+	}
 
+	render() {
+		
 		return (
 			<header>
 				<nav className={styles.navbar}>
@@ -32,12 +36,12 @@ class Navbar extends React.Component {
 						{this.state.menuOpen ? <FaClose className={styles.close} /> : <FaBars className={styles.hamburguer} />}
 					</span>
 					<ul className={this.state.menuOpen ? styles.menuOpen : styles.menu}>
-						<Link className={styles.menuLink} to="/" onClick={this.toggleMenu}>início</Link>
-						<Link className={styles.menuLink} to="/historia" onClick={this.toggleMenu}>história</Link>
-						<Link className={styles.menuLink} to="/programacao" onClick={this.toggleMenu}>programação</Link>
-						<Link className={styles.menuLink} to="/galeria" onClick={this.toggleMenu}>galeria</Link>
-						<Link className={styles.menuLink} to="/cardapio" onClick={this.toggleMenu}>cardápio</Link>
-						<Link className={styles.menuLink} to="/informacoes" onClick={this.toggleMenu}>informações</Link>
+						<Link className={this.state.pageOpen == 'inicio' ? styles.menuLinkClicked : styles.menuLink} to="/" onClick={() => this.linkHandler('inicio')}>início</Link>
+						<Link className={this.state.pageOpen == 'historia' ? styles.menuLinkClicked : styles.menuLink} to="/historia" onClick={() => this.linkHandler('historia')}>história</Link>
+						<Link className={this.state.pageOpen == 'programacao' ? styles.menuLinkClicked : styles.menuLink} to="/programacao" onClick={() => this.linkHandler('programacao')}>programação</Link>
+						<Link className={this.state.pageOpen == 'galeria' ? styles.menuLinkClicked : styles.menuLink} to="/galeria" onClick={() => this.linkHandler('galeria')}>galeria</Link>
+						<Link className={this.state.pageOpen == 'cardapio' ? styles.menuLinkClicked : styles.menuLink} to="/cardapio" onClick={() => this.linkHandler('cardapio')}>cardápio</Link>
+						<Link className={this.state.pageOpen == 'informacoes' ? styles.menuLinkClicked : styles.menuLink} to="/informacoes" onClick={() => this.linkHandler('informacoes')}>informações</Link>
 					</ul>
 				</nav>
 			</header>
