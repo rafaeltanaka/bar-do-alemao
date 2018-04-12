@@ -115,7 +115,8 @@
 	transition: all 1s;
 }
 .menuLinkClicked{
-	background-color: #142e00d9;
+	opacity: .5;
+	background-color: #142e00;
 	border: solid #EFEFEF .05rem;
 	border-radius: 5px;
 	color: #ababab;
