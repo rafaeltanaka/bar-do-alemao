@@ -1,7 +1,9 @@
 .footer{
     background-color: #112406;
     color: #EFEFEF;
-    padding: 1rem;
+}
+.footerWrapper{
+    padding: 1rem 1rem 4rem 1rem;
 }
 .contact{
     display: flex;
@@ -39,11 +41,9 @@
     justify-content: space-around;
 }
 .socialIcons{
-    background-color: #EFEFEF;
-    border-radius: 25%;
-    color: #112406;
-    font-size: 2.5rem;
-    padding: .15rem;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
 }
 .formNews{
     display: flex;
@@ -69,6 +69,32 @@
 }
 .inputName::placeholder, .inputEmail::placeholder{
     color: #EFEFEF;
+}
+.mobileFooter{
+    align-items: center;
+    background-color: #ffffff;
+    bottom: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+.contactLinks{
+    align-items: center;
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+    text-decoration: none;
+    width: 33%;
+}
+.contactLinks:nth-last-of-type(2){
+    border: solid #e0e0e0;
+    border-width: 0 .01rem 0 .01rem;  
+}
+.footerIcons{
+    color: #1d2d3c;
+    font-size: 2rem;
 }
 
 @media (min-width: 768px){
@@ -123,5 +149,8 @@
         margin: 0;
         padding: 0;
         width: 2rem;
+    }
+    .mobileFooter{
+        display: none;
     }
 }

@@ -68,7 +68,7 @@
 	left: -100%;
 	margin: 0;
 	padding: 0 1rem;
-	position: absolute;
+	position: fixed;
 	transition: all .2s ease;
 	top: 4.0315rem;
 	width: 100%;
@@ -80,7 +80,7 @@
 	left: 0;
 	margin: 0;
 	padding: 0 1rem;
-	position: absolute;
+	position: fixed;
 	transition: all .2s ease;
 	top: 4.0315rem;
 	visibility: visible;
