@@ -4,7 +4,6 @@ import styles from './Historia.css'
 const Historia = () => (
 	<section className={styles.history} >
 		<div className={styles.content} >
-			<h1 className={styles.title} >história</h1>
 			<p className={styles.text} >O Bar do Alemão nasceu sob o signo da música. Seu fundador foi Murilo, dono de uma imobiliária, bandolinista amador, que tinha o estranho hábito de cerrar as portas do bar às 20h. Depois disso só os amigos e os músicos.</p>
 			<p className={styles.text} >Ficou pouco tempo e passou o bar para Dagô, um vendedor de livros que, dali para sempre, se tornaria a melhor expressão do bar, especialmente pelo seu estilo de tocar pandeiro: mexia os ombros, em vez do instrumento. </p>
 			<p className={styles.text} >Nesse tempo, o bar foi invadido pela nova geração de músicos, os egressos dos festivais da Tupi, cuja figura de maior destaque era Eduardo Gudin.</p>
@@ -14,8 +13,8 @@ const Historia = () => (
 			<p className={styles.text} >Pelas mesas do bar vi passar Paulo Vanzolini e Adoniran, Hervé Cordovil e gênios desconhecidos do choro paulistano e os rapazes do MPB4.</p>
 			<p className={styles.text} >A cidade mudou, o Alemão permaneceu. Hoje, sob o comando de Eduardo Gudin e Flávio Chaves, é uma peça de resistência da música brasileira, do choro, mas, principalmente, de uma São Paulo que teima em resistir.</p>
 			<div className={styles.signature} >
-				<strong>Aluísio Falcão</strong>
-				<span>(março/2018)</span>
+				<span className={styles.signatureName} >Luis Nassif</span>
+				<span className={styles.signatureDate} >(março/2018)</span>
 			</div>
 		</div>
 	</section>

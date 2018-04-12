@@ -9,12 +9,17 @@
 }
 .title{
     align-self: flex-start;
+    color: #3E3E3E;
+    font-family: 'normal-title';
     font-size: 1rem;
+    font-weight: normal;
     padding-top: 1rem;    
     text-transform: uppercase;
 }
 .description{
-    font-size: .8rem;
+    color: #3E3E3E;
+    font-family: 'normal-text';
+    font-size: .9375rem;
     text-align: justify;
     width: 100%;
 }
@@ -45,11 +50,15 @@
     flex-grow: 1;
 }
 .imgTitle{
-    font-size: .8rem;
-    text-transform: uppercase;
+    color: #3E3E3E;
+    font-family: 'normal-text';
+    font-size: 1rem;
+    font-weight: bold;
 }
 .imgDescription{
-    font-size: .8rem;
+    color: #3E3E3E;
+    font-family: 'normal-text';
+    font-size: .75rem;
 }
 .control{
     align-items: center;
@@ -66,6 +75,10 @@
     height: .7rem;
     transform: rotate(-45deg);
     width: .7rem;
+}
+.number{
+    color: #3E3E3E;
+    font-size: 0.75rem;
 }
 .arrowRight{
     border: solid #3E3E3E;

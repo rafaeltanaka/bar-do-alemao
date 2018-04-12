@@ -35,7 +35,7 @@ const Infos = () => (
 				<div className={styles.text}>Segunda a quarta-feira: até 01h</div>
 				<div className={styles.text}>Sexta e sábado: até 03h</div>
 				<div className={styles.text}>Domingo: 18h - 24h*</div>
-				<div className={styles.text}>*a abertura da casa aos domingos depende da programação.</div>
+				<div className={styles.textNote}>*a abertura da casa aos domingos depende da programação.</div>
 			</div>
 		</div>
 		<div className={styles.localization}>

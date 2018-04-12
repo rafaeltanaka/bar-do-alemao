@@ -7,19 +7,13 @@ import quarta from './a35ff6bb_47cf6bc1de5945109877903865835cdb_mv2.webp'
 import quinta from './a45ff6bb_40f752b47fa7427791ef8d5d57c1597b_mv2.webp'
 import sexta from './a55ff6bb_f3ecb77d2a564f348258a8d94c249491_mv2.webp'
 import domingo from './a65ff6bb_1a2a9066d19841f9b7af83a314909194_mv2.webp'
-import segundaP from './5ff6bb_171acc29eeec4893a253fbd018422cc2_mv2.webp'
-import tercaP from './5ff6bb_24d87439ed894ba4b178efb48bcdbe91_mv2_d_1871_1295_s_2.webp'
-// import quartaP from './5ff6bb_47cf6bc1de5945109877903865835cdb_mv2.webp'
-// import quintaP from './5ff6bb_40f752b47fa7427791ef8d5d57c1597b_mv2.webp'
-// import sextaP from './5ff6bb_f3ecb77d2a564f348258a8d94c249491_mv2.webp'
-// import domingoP from './5ff6bb_1a2a9066d19841f9b7af83a314909194_mv2.webp'
 
 const ScheduleList = () => (
 	<div className={styles.scheduleList} >
 		<article className={styles.weekday} >
 			<div className={styles.imageWrapper}>
 				<Link to="/Monday" className={styles.link} >
-					<img className={styles.image} srcSet={`${segundaP} 300w, ${segunda} 768w`} sizes="(max-width: 769px) 768px" />
+					<img className={styles.image} src={segunda} />
 				</Link>
 			</div>
 			<div className={styles.content} >
@@ -30,7 +24,7 @@ const ScheduleList = () => (
 		</article>
 		<article className={styles.weekday} >
 			<Link to="/Tuesday" className={styles.link} >
-				<img className={styles.image} src={tercaP} srcSet={`${terca} 768w`} sizes="(max-width: 769px) 768px" />
+				<img className={styles.image} src={terca} />
 			</Link>
 			<div className={styles.content} >
 				<h2 className={styles.day} >terça</h2>

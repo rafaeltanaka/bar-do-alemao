@@ -54,7 +54,7 @@ const Menu = () => (
 					<ul className={styles.categoriesItem}>
 						{MenuList.outros.map(item => (
 							<React.Fragment key={item.title}>
-								<li className={styles.itemTitle} >{item.title}<span className={styles.otherDescription} >{item.description}</span></li>
+								<li className={styles.itemTitle} >{item.title}<span className={styles.otherDescription} > {item.description}</span></li>
 							</React.Fragment>
 						))}
 					</ul>

@@ -17,6 +17,9 @@
     flex-grow: 1;
 }
 .contactTitle, .openingTitle{
+    font-family: 'normal-title';
+    font-size: .8125rem;
+    font-weight: normal;
     text-transform: uppercase;
 }
 .address, .wayOfContact, .openingHours{
@@ -25,11 +28,19 @@
     font-size: 0.9rem;
     padding: 1rem 0 0 0;
 }
+.text{
+    font-family: 'normal-title';
+    font-size: .8125rem;
+    font-weight: normal;
+}
 .wayOfContact{
     padding: 0.9rem 0 0 0;
 }
 .link{
     color: #EFEFEF;
+    font-family: 'normal-title';
+    font-size: .8125rem;
+    font-weight: normal;
     text-decoration: none;
 }
 .opening{
@@ -52,6 +63,8 @@
     padding: 1rem;
 }
 .formText{
+    font-family: 'normal-title';
+    font-size: .875rem;
     padding-top: 1rem;
     text-align: center;
 }
@@ -107,12 +120,20 @@
         display: flex;
         flex-flow: row nowrap;
         max-width: 1000px;
+        padding-bottom: 1rem;
+        width: 100%;
     }
     .contact{
-        max-width: 1000px;
+        align-items: center;
+        display: flex;
+        flex-flow: row nowrap;
+        flex-grow: 1;
+        height: 100%;
+        justify-content: space-between;
+        max-width: none;
     }
     .contactInfo{
-        flex-grow: 0;
+        flex-grow: 1;
     }
     .address, .wayOfContact, .openingHours{
         font-size: .7rem;
@@ -120,16 +141,23 @@
     .opening{
         display: flex;
         flex-flow: column nowrap;
+        flex-grow: 1;
         padding: 0 1rem;
     }
+    .social{
+        flex-grow: 1;
+        height: 100%;
+    }
     .sunday{
-        font-size: .6rem;
+        font-family: 'normal-text';
+        font-size: .625rem;
     }
     .formNews{
         align-items: center;
         flex-flow: row wrap;
         justify-content: space-around;
-        padding: 1rem;
+        padding: 1rem 0 1rem 1rem;
+        width: 40%;
     }
     .formText{
         padding-top: 0;

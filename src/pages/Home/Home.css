@@ -8,23 +8,39 @@
     padding: 1rem;
 }
 .title{
-    text-align: center;
+    color: #3E3E3E;
+    font-family: 'normal-title';
+    font-size: 2.313rem;
+    font-weight: normal;
+    padding-bottom: 1rem;
+    text-align: justify;
     text-transform: uppercase;
 }
 .text{
+    color: #3E3E3E;
+    font-family: 'normal-text';
     text-align: justify;
 }
 .signature{
 	align-items: center;
 	display: flex;
 	flex-flow: column nowrap;
-	float: right;
+    float: right;
 	justify-content: center;
 	padding-top: 1rem;
+}
+.signatureName{
+    font-family: 'normal-text';
+    font-size: 0.9375rem;
+    font-weight: bold;
+}
+.signatureDate{
+    font-family: 'normal-text';
+    font-size: 0.875rem;
 }
 
 @media (min-width: 768px){
     .content{
-        max-width: 768px;
+        max-width: 800px;
     }
 }

@@ -22,23 +22,23 @@ class Footer extends React.Component {
 						<div className={styles.contactInfo} >
 							<h2 className={styles.contactTitle} >contato</h2>
 							<div className={styles.address} >
-								<span>Avenida Antártica, 554</span>
-								<span>Água Branca, São Paulo - SP</span>
-								<span>CEP 05003-020</span>
+								<span className={styles.text} >Avenida Antártica, 554</span>
+								<span className={styles.text} >Água Branca, São Paulo - SP</span>
+								<span className={styles.text} >CEP 05003-020</span>
 							</div>
 							<div className={styles.wayOfContact} >
-								<span>(11) 3672-1859 / 3862-5975</span>
+								<span className={styles.text} >(11) 3672-1859 / 3862-5975</span>
 								<a className={styles.link} href="mailto:contato.bardoalemao@gmail.com">contato.bardoalemao@gmail.com</a>
 							</div>
 						</div>
 						<div className={styles.opening} >
 							<h2 className={styles.openingTitle}>funcionamento</h2>
 							<div className={styles.openingHours} >
-								<span>Segundas, terças e quartas-feiras:</span>
-								<span>das 11h30 à 01h</span>
-								<span>Quintas, sextas e sábados:</span>
-								<span>das 11h30 às 03h</span>
-								<span>Domingos: das 18h às 24h*</span>
+								<span className={styles.text} >Segundas, terças e quartas-feiras:</span>
+								<span className={styles.text} >das 11h30 à 01h</span>
+								<span className={styles.text} >Quintas, sextas e sábados:</span>
+								<span className={styles.text} >das 11h30 às 03h</span>
+								<span className={styles.text} >Domingos: das 18h às 24h*</span>
 								<span className={styles.sunday} >*a abertura da casa aos domingos depende da programação.</span>
 							</div>
 						</div>

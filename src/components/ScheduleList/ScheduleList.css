@@ -34,13 +34,15 @@
 }
 .day{
 	color: #EFEFEF;
-	font-size: .7rem;
+	font-family: 'normal-text';
+	font-size:  .75rem;
 	text-transform: uppercase;
 	text-overflow: ellipsis;
 }
 .time{
 	color: #EFEFEF;
-	font-size: .7rem;
+	font-family: 'normal-text';
+	font-size: 0.6875rem;
 }
 
 @media (min-width: 768px){

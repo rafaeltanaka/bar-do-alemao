@@ -1,6 +1,23 @@
+@font-face{
+	font-family: 'pacifica-w00-condensed';
+	src: url('./fonts/6849614c-986c-45b1-a1a7-39c891759bb9.woff') format('woff')
+}
+@font-face{
+	font-family: 'orig_nexarustsansblack';
+	src: url('./fonts/nexa-rust.sans-black.woff') format('woff')
+}
+@font-face{
+	font-family: 'normal-text';
+	src: url('./fonts/bc176270-17fa-4c78-a343-9fe52824e501.woff') format('woff')
+}
+@font-face{
+	font-family: 'normal-title';
+	src: url('./fonts/5cee8d6e-89ad-4d8c-a0ac-584d316b15ae.woff2') format('woff2');
+}
+
 :global(body) {
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	font-family: 'normal-text', sans-serif;
+	margin: 0;
+	padding: 0;
 }
