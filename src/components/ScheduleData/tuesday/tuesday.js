@@ -5,7 +5,7 @@ export default [
 	{
 		title: 'terça | mpb e seresta',
 		description: '"JOÃO MACACÃO CONVIDA" - cantor e violonista, o músico é uma das figuras mais marcantes do choro, samba e seresta. "CARDÁPIO MUSICAL" com Cris Vecchio e Sérgio Arruda - Na última terça-feira de cada mês, a cantora e o violonista apresentam uma seleção de mais de 250 clássicos para você escolher "à la carte".',
-		imgTitle: 'MPB e seresta',
+		imgTitle: 'MPB e Seresta',
 		img: img1,
 		imgDescrition: 'João Macacão (Foto Stela Handa)'
 	},

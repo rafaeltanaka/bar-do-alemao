@@ -14,7 +14,7 @@ export default [
 	{
 		title: 'sexta e sábado | mpb',
 		description: 'As noites de sexta e sábado são divididas em dois turnos, nos quais os cantores, que alternam-se a cada final de semana, acompanhados por violão e percussão, trazem o melhor da nossa música para o Bar do Alemão.',
-		imgTitle: 'mpb',
+		imgTitle: 'MPB',
 		img: img1,
 		imgDescrition: 'Maurício Sant`Anna, Gudin e Karine'
 	},

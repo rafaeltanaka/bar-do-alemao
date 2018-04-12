@@ -3,7 +3,7 @@ import styles from './Menu.css'
 import MenuList from './MenuList.js'
 
 const Menu = () => (
-	<div>
+	<div className={styles.menuWrapper} >
 		<div className={styles.firstSegment} >
 			<div className={styles.leftHalf} >
 				<article className={styles.categories}>

@@ -58,7 +58,7 @@ class Footer extends React.Component {
 						<span className={styles.formText} >Cadastre seu email para receber novidades:</span>
 						<input type="text" placeholder="Nome" className={styles.inputName} />
 						<input type="email" placeholder="email" className={styles.inputEmail} />
-						<input type="button" value="OK" className={styles.formButton} />
+						<button className={styles.formButton} >OK</button>
 					</form>
 				</div>
 				<div className={styles.mobileFooter} >

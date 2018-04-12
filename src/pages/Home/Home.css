@@ -4,21 +4,19 @@
     flex-flow: column nowrap;
     justify-content: center;
 }
-.content{
-    padding: 1rem;
-}
 .title{
     color: #3E3E3E;
     font-family: 'normal-title';
-    font-size: 2.313rem;
+    font-size: 2.25rem;
     font-weight: normal;
-    padding-bottom: 1rem;
-    text-align: justify;
+    padding: 1rem;
+    text-align: center;
     text-transform: uppercase;
 }
 .text{
     color: #3E3E3E;
     font-family: 'normal-text';
+    padding: 0 1rem 0 1rem;
     text-align: justify;
 }
 .signature{
@@ -27,7 +25,7 @@
 	flex-flow: column nowrap;
     float: right;
 	justify-content: center;
-	padding-top: 1rem;
+	padding: 1rem 1rem 1rem 0;
 }
 .signatureName{
     font-family: 'normal-text';

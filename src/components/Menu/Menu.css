@@ -1,3 +1,6 @@
+.menuWrapper{
+	padding: 0 1rem;
+}
 .firstSegment{
 	padding: 1rem 0 1rem 0;
 }
@@ -52,6 +55,9 @@
 }
 
 @media (min-width: 768px){
+	.menuWrapper{
+		padding: 0;
+	}
 	.firstSegment, .segment{
 		display: flex;
 		flex-flow: row nowrap;
